@@ -1,4 +1,4 @@
-# CS 513: Theory and Practice of Data Cleaning - project
+# CS513: Theory & Practice of Data Cleaning Project
 ## End-to-End Data Cleaning Workflow
 
 
