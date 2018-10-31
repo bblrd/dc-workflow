@@ -20,8 +20,11 @@ The goal of the final project is to use various tools and techniques covered in 
 ### Project Phases
 
 (1.) Overview and initial assessment - describe the structure and content of the dataset and quality issues discovered. Describe a use case of the dataset and derive data cleaning goals that can be achieved from this use. 
-(2.) Data cleaning with OpenRefine - use [OpenRefine](openrefine.org) to clean the chosen dataset. Document the result in narrative and supplemental information. Quantify the results of our efforts along with provenance information from OpenRefine. 
+
+(2.) Data cleaning with OpenRefine - use [OpenRefine](openrefine.org) to clean the chosen dataset. Document the result in narrative and supplemental information. Quantify the results of our efforts along with provenance information from OpenRefine.
+
 (3.) Develop a relational database schema - identify the *logical integrity constraints* (ICs) after the data is loaded into a SQLite database. Check the ICs that we have identified.
+
 (4.) Create a workflow model - used [YesWorkflow](https://github.com/yesworkflow-org) to create a workflow model for the project. Answered the following questions: what are the key inputs and outputs of workflow? What are the dependencies?
 
 ## The Data
