@@ -3,7 +3,7 @@
 
 
 
-##### MCS-DS program at UIUC – Fall 2018
+##### MCS-DS program at the University of Illinois at Urbana-Champaign – Fall 2018
 
 ## Team
 
