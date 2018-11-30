@@ -30,3 +30,10 @@ The goal of the final project is to use various tools and techniques covered in 
 ## The Data
 
 The data used is New York Public Library's [collection of historical menus.](http://menus.nypl.org/) The collection includes about 45,000 menus from the 1840s to the present in the NYC area.
+
+
+## References
+
+(https://en.wikipedia.org/wiki/Frank_E._Buttolph)[https://en.wikipedia.org/wiki/Frank_E._Buttolph]
+(http://menus.nypl.org)[http://menus.nypl.org]
+
