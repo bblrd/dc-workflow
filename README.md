@@ -29,7 +29,7 @@ The goal of the final project is to use various tools and techniques covered in 
 
 ## The Data
 
-The data used is New York Public Library's [collection of historical menus.](http://menus.nypl.org/) The collection includes about 45,000 menus from the 1840s to the present in the NYC area.
+The data used is New York Public Library's [collection of historical menus.](http://menus.nypl.org/) The collection includes about 45,000 menus from the 1840s to the present in the NYC area. We used the June 17,2017 version.
 
 
 ## References
