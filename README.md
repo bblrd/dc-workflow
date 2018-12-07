@@ -34,7 +34,11 @@ The data used is New York Public Library's [collection of historical menus.](htt
 
 ## References
 
-(https://en.wikipedia.org/wiki/Frank_E._Buttolph)[https://en.wikipedia.org/wiki/Frank_E._Buttolph]
+(https://en.wikipedia.org/wiki/Frank_E._Buttolph)
 
-(http://menus.nypl.org)[http://menus.nypl.org]
+(http://menus.nypl.org)
+
+(https://try.yesworkflow.org)
+
+(https://github.com/bradjballard/dc-workflow)
 
