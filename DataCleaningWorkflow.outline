@@ -1,0 +1,71 @@
+# @begin DataCleaningWorkflow  @desc The overall workflow for cleaning the NYPL Menus Dataset
+# @in Menu.csv  @uri file://data/Menu.csv
+# @in MenuPage.csv  @uri file://data/MenuPage.csv
+# @in MenuItem.csv  @uri file://data/MenuItem.csv
+# @in Dish.csv  @uri file://data/Dish.csv
+
+#     @begin Upload/Clean_Menu_with_OpenRefine  @desc Clean Menu.csv with OpenRefine
+#     @in Menu.csv  @uri file://data/Menu.csv
+#     @param OpenRefineSequence
+#     @out CMenu.csv  @uri file://data/clean/CMenu.csv
+#     @end Upload/Clean_Menu_with_OpenRefine
+
+#     @begin Upload/Clean_MenuPage_with_OpenRefine  @desc Clean MenuPage.csv with OpenRefine
+#     @in MenuPage.csv  @uri file://data/MenuPage.csv
+#     @param OpenRefineSequence
+#     @out CMenuPage.csv  @uri file://data/clean/CMenuPage.csv
+#     @end Upload/Clean_MenuPage_with_OpenRefine
+
+#     @begin Upload/Clean_MenuItem_with_OpenRefine @desc Clean MenuItem.csv with OpenRefine
+#     @in MenuItem.csv  @uri file://data/MenuItem.cv
+#     @param OpenRefineSequence
+#     @out CMenuItem.csv  @uri file://data/clean/CMenuItem.csv
+#     @end Upload/Clean_MenuItem_with_OpenRefine
+
+#     @begin Upload/Clean_Dish_with_OpenRefine  @desc Clean Dish.csv with OpenRefine
+#     @in Dish.csv  @uri file://data/Dish.csv
+#     @param OpenRefineSequence
+#     @out CDish.csv  @uri file://data/clean/CDish.csv
+#     @end Upload/Clean_Dish_with_OpenRefine
+
+#     @begin SQLite_Procedure_Menu  @desc Load CleanMenu.csv into table: menu
+#     @in CMenu.csv  @uri file://data/clean/CMenu.csv
+#     @param SQLiteLoadSequence
+#     @out menu  @uri sqlite://database.db/menu
+#     @end SQLite_Procedure_Menu
+
+#     @begin SQLite_Procedure_MenuPage @desc Load CleanMenuPage.csv into table: menupage
+#     @in CMenuPage.csv  @uri file://data/clean/CMenuPage.csv
+#     @param SQLiteLoadSequence
+#     @out menupage  @uri sqlite://database.db/menupage
+#     @end SQLite_Procedure_MenuPage
+
+#     @begin SQLite_Procedure_MenuItem @desc Load CleanMenuItem.csv into table: menuitem
+#     @in CMenuItem.csv  @uri file://data/clean/CMenuItem.csv
+#     @param SQLiteLoadSequence
+#     @out menuitem  @uri sqlite://database.db/menuitem
+#     @end SQLite_Procedure_MenuItem
+
+#     @begin SQLite_Procedure_Dish  @desc Load CDish.csv into table: dish
+#     @in CDish.csv  @uri file://data/clean/CDish.csv
+#     @param SQLiteLoadSequence
+#     @out dish  @uri sqlite://database.db/dish
+#     @end SQLite_Procedure_Dish
+
+#     @begin SQLConstraintsCheck  @desc SQL to check integrity constraints and dependencies
+#     @in menu  @uri sqlite://database.db/menu
+#     @in menupage  @uri sqlite://database.db/menupage
+#     @in menuitem  @uri sqlite://database.db/menuitem
+#     @in dish  @uri sqlite://database.db/dish
+
+#     @out menu  @uri sqlite://database.db/menu
+#     @out menupage @uri sqlite://database.db/menupage
+#     @out menuitem  @uri sqlite://database.db/menuitem
+#     @out dish  @uri sqlite://database.db/dish
+#     @end SQLConstraintsCheck
+
+# @out menu  @uri sqlite://database.db/menu
+# @out menupage  @uri sqlite://database.db/menupage
+# @out menuitem  @uri sqlite://database.db/menuitem
+# @out dish @uri sqlite://database.db/dish
+# @end DataCleaningWorkflow

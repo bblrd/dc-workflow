@@ -1,0 +1,36 @@
+# @begin Clean_physical_description @desc Workflow for cleaning physical_description in Menu.csv
+# @in Menu.csv  @uri file://data/Menu.csv
+
+#   @begin Upload_to_OpenRefine @desc Load Menu.csv to OpenRefine
+#   @in Menu.csv
+#   @out Menu_OpenRefine
+#   @end Upload_to_OpenRefine
+
+#   @begin Clean_physical_description @desc Cleaning the column: physical_description
+#   @in Menu_OpenRefine
+#   @out physical_description
+#   @end Clean_physical_description
+
+#   @begin SplitColumn @desc Split the physical_description based on ;
+#   @in physical_description
+#   @out physical_description_type
+#   @out physical_description_2
+#   @out physical_description_3
+#   @out physical_description_4
+#   @end SplitColumn
+
+#   @begin CombineColumns @desc Use GREL to combine physical_descrition_2, 3, and 4
+#   @in physical_description_2
+#   @in physical_description_3
+#   @in physical_description_4
+#   @out physical_description_additional
+#   @end CombineColumns
+
+#   @begin SeparateValues @desc Separate the different column values based on -
+#   @in physical_description_additional
+#   @out physical_description_additional
+#   @end SeparateValues
+
+# @out physical_description_type
+# @out physical_description_additional
+# @end Clean_physical_description
